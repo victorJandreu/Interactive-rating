@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --oragen:hsl(25, 97%, 53%);
+    --light-gray: hsl(217, 12%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --dark-blue:hsl(213, 19%, 18%);
+    --medium-gray:  hsl(216, 12%, 54%);
+    --transparent: hsla(216, 12%, 54%, 0.1);
+    --very-dark-blue:  hsl(216, 12%, 8%);
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    background-color: var(--very-dark-blue)
+}
+
+
+main{
+    width: 370px;
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--transparent);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+#numbers{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thank{
+    text-align: center;
+  }
+
+h1, button{
+    font-weight: 700;
+}
+
+
+
+h1{
+    color: var(--white);
+    font-size: 1.8em;
+    margin: 0.8rem 0 ;
+}
+
+h2{
+    color: var(--white);
+    font-size: 2em;
+    margin-bottom: 0.7rem;
+}
+
+p{
+    color: var(--medium-gray);
+    font-weight: 400;
+}
+
+.request {
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+}
+
+
+
+
+.select{
+    color: var(--oragen);
+    background-color: var(--transparent);
+    width: fit-content;
+    margin: 1rem auto 0 auto;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.1em;
+    border-radius: 20px;
+}
+
+.apreciated{
+    margin: 0;
+    line-height: 1.4 ;
+}
+
+
+button{
+    cursor: pointer;
+    font-family:"Overpass", sans-serif; 
+    transition: all 0.3s linear;
+}
+#numbers button{
+    border: none;
+    color: var(--medium-gray);
+}
+
+
+#numbers button:hover{
+    background-color: var(--oragen);
+}
+
+.color{
+    transition: none;
+    background-color: var(--light-gray);
+    color: var(--white) !important;
+}
+
+#submit{
+    width: 100%;
+    padding: 0.9rem 0;
+    color: var(--white);
+    background-color: var(--oragen);
+    border: 1px solid black;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border-radius: 30px;
+    margin-top: 0.6rem;
+ 
+}
+
+#submit:hover{
+    background-color: var(--white);
+    color: var(--oragen);
+}
